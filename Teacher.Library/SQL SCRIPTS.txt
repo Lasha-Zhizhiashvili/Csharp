@@ -1,0 +1,33 @@
+--სტუდენტები
+
+--შექმენით ცხრილი Teachers
+
+--Id
+--სახელი
+--გვარი
+--დაბ.თარიღ
+--პირადი ნოემრი
+
+--CREATE TABLE Teachers
+--(
+--	Id INT PRIMARY KEY IDENTITY,
+--	FirstName NVARCHAR(50) NOT NULL,
+--	LastName NVARCHAR(50) NOT NULL,
+--	DateOfBirth DATETIME NOT NULL,
+--	Pin CHAR(11) NOT NULL
+--  Email NVARCHAR(50) NOT NULL
+--)
+
+--ALTER TABLE Teachers
+--ADD CONSTRAINT CK_validPin
+--CHECK (LEN(Pin) = 11)
+--ADD CONSTRAINT CK_validEmail
+--CHECK (Email LIKE '%@%.%');
+
+
+--INSERT INTO Teachers (FirstName,LastName,DateOfBirth,Pin,Email)
+--VALUES
+--(N'ნიკა',N'კუპრაშვილი','2005-10-12','01024085123','saba@gmail.com'),
+--(N'ლაშა',N'ჟიჟიაშვილი','2006-09-22','01024185123','sandro@gmail.com'),
+--(N'ნიკოლოზ',N'მძინარაშვილი','2006-01-20','11024185123','giga@gmail.com')
+
